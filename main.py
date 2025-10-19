@@ -1,3 +1,3 @@
-import mymodule
+from mymodule import say_hello
 
-print(mymodule.say_hello("World"))
+print(say_hello("World"))
