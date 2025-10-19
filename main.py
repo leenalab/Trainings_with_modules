@@ -1,12 +1,11 @@
+from calculation import salary_calculations
 
-import sys
+salary = 1000
+bonus = 15
+salary_with_bonus = salary_calculations.add_bonus(salary, bonus)
+print(salary_with_bonus)  # 1015
 
-def main():
-    if len(sys.argv) > 1:
-        print(sys.argv[1])
 
-if __name__ == "__main__":
-    main()
 
- python arg.py 123 
+
 
