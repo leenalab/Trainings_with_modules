@@ -1,10 +1,11 @@
-from calculation.salary_calculations import add_bonus
+from utility import nice_function, not_bad
 
-salary = 1000
-bonus = 15
-salary_with_bonus = add_bonus(salary, bonus)
-print(salary_with_bonus)  # 1015
+nice_function()
+not_bad("Test string")
 
+import sys, os
+print("CWD:", os.getcwd())
+print("sys.path[0]:", sys.path[0])
 
 
 
