@@ -1,16 +1,6 @@
-import mymodule
+def say_hello(name):
+    print(f'Hello, {name}')
 
-print(mymodule.say_hello("World"))
-
-from mymodule import say_hello
-
-print(say_hello("World"))
-
-from mymodule import say_hello as greeting
-
-print(greeting("World"))
-
-from mymodule import say_hello as greeting
-
-print(dir())
-print(greeting("World"))
+if __name__ == '__main__':
+    print("You imported hello.py")
+    say_hello('user')
