@@ -1,6 +1,12 @@
-def say_hello(name):
-    print(f'Hello, {name}')
 
-if __name__ == '__main__':
-    print("You imported hello.py")
-    say_hello('user')
+import sys
+
+def main():
+    if len(sys.argv) > 1:
+        print(sys.argv[1])
+
+if __name__ == "__main__":
+    main()
+
+ python arg.py 123 
+
