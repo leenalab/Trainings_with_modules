@@ -6,7 +6,9 @@ Person = collections.namedtuple('Person', ['first_name', 'last_name', 'age', 'bi
 # Створення екземпляра Person
 person = Person('Mick', 'Nitch', 35, 'Boston', '01146')
 
-print(person.first_name)       
-print(person.post_index) 
-print(person.age)        
-print(person[3])         
+# Створення іменованого кортежу Cat
+Cat = collections.namedtuple('Cat', ['nickname', 'age', 'owner']) 
+        
+cat = Cat('Simon', 4, 'Krabat') 
+
+print(f'This is {cat.nickname}, a {cat.age}-year-old cat. His owner is {cat.owner}')
