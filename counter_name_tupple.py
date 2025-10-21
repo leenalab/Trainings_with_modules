@@ -29,3 +29,11 @@ from collections import Counter
 # Створення Counter з рядка
 letter_count = Counter("To be or not to be, that is the question.")
 print(letter_count)
+
+sentence = ("To be or not to be, that is the question.")
+words = sentence.split()
+word_count = Counter(words)
+
+# Виведення слова та його частоти
+for word, count in word_count.items():
+    print(f"{word}: {count}")
